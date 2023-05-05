@@ -8,3 +8,8 @@ pom.xml.bak
 mvnw
 mvnw.cmd
 logs
+*.mvn
+/logs
+mvnw
+mvnw.cmd
+
