@@ -18,12 +18,36 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencies>
+        <!--Spring 测试 starter-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--SOFABoot 健康检查 starter-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>healthcheck-sofa-boot-starter</artifactId>
+        </dependency>
+
+        <!--SOFABoot web starter-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>3.0.6</version>
         </dependency>
 
+        <!--SOFABoot 模块隔离 stater-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>isle-sofa-boot-starter</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
         <!--        <dependency>-->
         <!--            <groupId>com.alipay.sofa</groupId>-->
@@ -36,11 +60,6 @@
         <!--            <artifactId>runtime-sofa-boot-starter</artifactId>-->
         <!--            <version>3.16.0</version>-->
         <!--        </dependency>-->
-        <dependency>
-            <groupId>com.alipay.sofa</groupId>
-            <artifactId>isle-sofa-boot-starter</artifactId>
-            <version>3.13.0</version>
-        </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa.common</groupId>

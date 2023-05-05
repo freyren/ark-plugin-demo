@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alipay.sofa</groupId>
     <artifactId>ark-plugin-demo</artifactId>
     <packaging>pom</packaging>
     <properties>
@@ -12,6 +11,11 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <version>1.0.0</version>
+    <parent>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>sofaboot-dependencies</artifactId>
+        <version>3.10.0</version>
+    </parent>
     <modules>
         <module>hessian3-module</module>
         <module>hessian4-module</module>
@@ -19,6 +23,9 @@
         <module>ToyDemo</module>
         <module>ToyService</module>
     </modules>
-
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
