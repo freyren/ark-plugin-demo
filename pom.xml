@@ -7,11 +7,17 @@
     <groupId>com.alipay.sofa</groupId>
     <artifactId>ark-plugin-demo</artifactId>
     <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
     <version>1.0.0</version>
     <modules>
         <module>hessian3-module</module>
         <module>hessian4-module</module>
         <module>pojo-module</module>
+        <module>ToyDemo</module>
+        <module>ToyService</module>
     </modules>
 
 

@@ -12,8 +12,9 @@
     <artifactId>hessian4-ark-plugin</artifactId>
 
     <dependencies>
+
         <dependency>
-            <groupId>hessian</groupId>
+            <groupId>com.caucho</groupId>
             <artifactId>hessian</artifactId>
             <version>4.0.7</version>
         </dependency>
@@ -21,6 +22,15 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>com.alipay.sofa</groupId>
                 <artifactId>sofa-ark-plugin-maven-plugin</artifactId>
